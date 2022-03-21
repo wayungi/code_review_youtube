@@ -1,0 +1,241 @@
+div, section, aside, html, body, p{
+    margin:0;
+    padding:0;
+    /* border:1px solid black; */
+}
+
+.container{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    /* height:100vh; */
+    background-color: black;
+}
+
+.page-header{
+    height:4em;
+    width:100%;
+    background-color:rgba(56,56,56, .3);
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.main-body{
+    /* border:1px solid red; */
+    flex-grow:1;
+    flex-basis:100%;
+
+    /* parent flex porperties */
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-items: stretch;
+    align-content: flex-start;
+    height:90%;
+}
+
+.main-content{
+    flex-basis:60%;
+    flex-grow:2;
+    flex-shrink:1; /*  default*/
+    /* outline:1px solid green; */
+    height:100%;
+    /* background-color: green; */
+}
+
+
+.aside-content{
+    flex-basis: 30%;
+    flex-grow:1;
+    flex-shrink:1;
+    /* outline:1px solid red; */
+    height:100%;
+    /* background: red; */
+}
+
+/* header contnet styles */
+
+/* navigation button styles */
+.nav-min{
+    /* outline:1px solid black; */
+    display:inline-block;
+    width:2em;
+    height:2.5em;
+    margin: 0 1.5em;
+    cursor:pointer
+}
+
+.nav-min > div{
+    width:100%;
+    border-bottom:1px solid #fff;
+    margin-top:.55em;
+}
+
+
+/* youtube logo styles */
+.logo-div {
+    width:15em;
+    /* height:2.5em; */
+    /* border:1px solid pink; */
+    width:8em;
+    margin-right:8em;
+} 
+
+img.logo{
+    width:100%;
+}
+
+/* header search field */
+
+.search-field[type=text]{
+    width:40em;
+    height: 3em;
+    border:none;
+}
+
+.search-field[type=text]:focus{
+    outline:none;
+}
+
+.search-form{
+    /* border:1px solid black; */
+    padding:.1em;
+    background-color:grey;
+    display:flex;
+    
+}
+
+.search-icon{
+    display:inline-block;
+    width:4em;
+    /* border:1px solid black; */
+    padding:auto;
+    cursor:pointer;
+}
+
+img.mag-icon{
+    /* width:100%; */
+    height:2em;
+    /* margin-left:.1em; */
+    padding-top:.3em;
+    padding-left:.8em
+}
+
+/* audio search field */
+
+div.microphone{
+    /* border:1px solid black; */
+    margin-left:1em;
+}
+
+img.mic, div.microphone{
+    width:3em;
+    height:2.8em;
+    border-radius:50%;
+}
+
+/* right  icons */
+
+div.right-icons{
+    /* border:1px solid black; */
+    width:15em;
+    padding:.1em .5em;
+}
+
+img.go-live,img.bell-icon, img.user-icon{
+    display:inline-block;
+    width:2em;
+    height:2em;
+    margin: .3em 1em;
+}
+
+img.user-icon{
+    border-radius:50%;
+}
+
+div.apps-panel{
+    display:inline-block;
+    width:2em;
+    height:2em;
+    /* outline:1px solid white; */
+    cursor:pointer;
+}
+
+div.app-rep{
+    border:1px solid white;
+    width:5px;
+    height:5px;
+    margin:1px;
+    float:left;
+}
+
+/* style the youtube video player */
+
+div.player{
+    /* border:1px solid black; */
+    width:48em;
+    height:27em;
+    margin: 1.8em auto;
+    margin-left:4em;
+}
+
+.player iframe{
+    width:100%;
+    height:27em;
+}
+
+div.video-title{
+    margin-left:4em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+}
+
+p.main-views{
+    color:antiquewhite;
+    padding-left:4em;
+}
+
+
+div.description{
+    border-top:1px solid antiquewhite;
+    border-bottom: 1px solid antiquewhite;
+    margin:1em 1.5em 2em 4em;
+    padding:.5em 1em;
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* thumbnail styling */
+
+.thumbnail, .thmb-title{
+    margin-top:1em;
+    display:inline-block;
+    width:13em;
+    /* border:1px solid black; */
+}
+
+img.thmb-img{
+    width:13em;
+}
+
+.thmb-title{
+    padding-left:1em;
+    box-sizing: border-box;
+
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:antiquewhite;
+}
+
+h3.title{
+    color:white;
+    font-size:1em;
+    font-weight: bold;
+}
+
+.thmb-title > p{
+    line-height: 1.5em;
+}
